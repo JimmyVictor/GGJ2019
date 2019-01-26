@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\DestroyObject.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerMotor.cs" />
+    <Compile Include="Assets\Scripts\RotatingDoor.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Games/Documents/GitHub/GGJ2019/GGJ2019/GGJ2019/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
