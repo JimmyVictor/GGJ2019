@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 
 [RequireComponent(typeof(PlayerMotor))]
@@ -34,6 +35,11 @@ public class PlayerController : MonoBehaviour {
 
         // Apply movement
         motor.Move(_velocity);
+
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
 
         // Calculate rotation as a 3D vector (turning around)
         float yRot = Input.GetAxisRaw("Mouse X");
