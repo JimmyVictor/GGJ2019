@@ -592,6 +592,7 @@ GameObject:
   - component: {fileID: 749876048}
   - component: {fileID: 749876052}
   - component: {fileID: 749876051}
+  - component: {fileID: 749876053}
   m_Layer: 1
   m_Name: Quad
   m_TagString: Untagged
@@ -693,6 +694,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1.5, z: 0.2}
   m_Center: {x: 0, y: 0, z: -0.1}
+--- !u!114 &749876053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 749876046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75d27f89eb1eb254fa1d2aa332404ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collides: 0
+  TextBox: {fileID: 311494951}
+  Choice01: {fileID: 1848542883}
+  Choice02: {fileID: 2074756339}
+  ChoiceMade: 0
 --- !u!1 &1032466646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,50 +1045,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 144fafb731a4b4944b48596f3688afb4,
     type: 3}
   m_PrefabInternal: {fileID: 1612035408}
---- !u!1 &1616623614
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1616623616}
-  - component: {fileID: 1616623615}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1616623615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1616623614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75d27f89eb1eb254fa1d2aa332404ce7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TextBox: {fileID: 311494951}
-  Choice01: {fileID: 1848542883}
-  Choice02: {fileID: 2074756339}
-  ChoiceMade: 0
---- !u!4 &1616623616
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1616623614}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -313.2908, y: 1076.3593, z: -38.875}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1618178070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1356,7 +1329,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1616623615}
+      - m_Target: {fileID: 749876053}
         m_MethodName: ChoiceOption1
         m_Mode: 1
         m_Arguments:
@@ -1524,7 +1497,7 @@ GameObject:
   - component: {fileID: 1933559674}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Canvas1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1798,7 +1771,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1616623615}
+      - m_Target: {fileID: 749876053}
         m_MethodName: ChoiceOption2
         m_Mode: 1
         m_Arguments:
